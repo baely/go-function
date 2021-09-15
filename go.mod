@@ -1,6 +1,6 @@
 module baely.co/gofunc
 
-go 1.17
+go 1.13
 
 require (
 	cloud.google.com/go/datastore v1.5.0

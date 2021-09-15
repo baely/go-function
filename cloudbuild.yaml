@@ -1,0 +1,9 @@
+steps:
+  - name: golang
+    args: ['go', 'version']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['functions', 'deploy', 'get-person', '--trigger-http', '--region', 'australia-southeast1', '--runtime', 'go113', '--entry-point', 'GetPerson', '--source', './']
+    dir: '/'
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['functions', 'deploy', 'add-person', '--trigger-http', '--region', 'australia-southeast1', '--runtime', 'go113', '--entry-point', 'AddPerson', '--source', './']
+    dir: '/'

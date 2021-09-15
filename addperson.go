@@ -1,14 +1,12 @@
 package gofunc
 
 import (
-	"cloud.google.com/go/datastore"
+	"context"
 	"encoding/json"
 	"fmt"
 	"net/http"
-)
-
-import (
-	"context"
+	
+	"cloud.google.com/go/datastore"
 )
 
 func AddPerson(w http.ResponseWriter, r *http.Request) {

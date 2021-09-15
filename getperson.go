@@ -1,11 +1,12 @@
 package gofunc
 
 import (
-	"cloud.google.com/go/datastore"
 	"context"
 	"fmt"
-	"google.golang.org/api/iterator"
 	"net/http"
+	
+	"cloud.google.com/go/datastore"
+	"google.golang.org/api/iterator"
 )
 
 func GetPerson(w http.ResponseWriter, r *http.Request) {

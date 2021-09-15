@@ -1,0 +1,5 @@
+test
+docker-compose.yml
+setenv.bat
+.idea
+*.exe

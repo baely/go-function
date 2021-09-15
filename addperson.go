@@ -20,7 +20,7 @@ func AddPerson(w http.ResponseWriter, r *http.Request) {
 	}
 
 	key := datastore.IncompleteKey("Person", nil)
-	key, err := client.Put(ctx, key, person)
+	key, err := client.Put(ctx, key, &person)
 	if err != nil {
 		fmt.Println(err)
 	}
